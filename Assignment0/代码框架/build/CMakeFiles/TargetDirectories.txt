@@ -1,0 +1,3 @@
+/home/cs18/Desktop/Games101/Assignment0/代码框架/build/CMakeFiles/rebuild_cache.dir
+/home/cs18/Desktop/Games101/Assignment0/代码框架/build/CMakeFiles/Transformation.dir
+/home/cs18/Desktop/Games101/Assignment0/代码框架/build/CMakeFiles/edit_cache.dir
