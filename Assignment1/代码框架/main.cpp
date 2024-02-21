@@ -82,10 +82,10 @@ Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
 
     angle = angle / 180.0 * acos(-1);
     Eigen::Matrix3f cross_product_matrix;
-    cross_product_matrix << 0, -axis.z(), axis.y(),0,
-                                               axis.z(), 0, -axis.x(), 0,
-                                               -axis.y(), axis.x(), 0, 0,
-                                               0, 0, 0, 1;
+    cross_product_matrix << 0, -axis.z(), axis.y(),
+                                               axis.z(), 0, -axis.x(),
+                                               -axis.y(), axis.x(), 0,
+        
     temp_rotation =  cos(angle) * temp_rotation + (1 - cos(angle)) * axis * axis.transpose() 
                                  + sin(angle) * cross_product_matrix;
 
@@ -93,6 +93,7 @@ Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
 
     return rotation;
 }
+
 int main(int argc, const char** argv)
 {
     float angle = 0;
